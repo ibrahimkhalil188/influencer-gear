@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+/************ 
+Common style 
+*************/
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+/**************** 
+Header nav style 
+*****************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:75px;
+    height: 52px;
+    padding:10px 30px;
+}
+.menu-var ul{
+    display: flex;
+}
+.menu-var ul li{
+    list-style: none;
+    margin-right:16px;
+}
+.menu-var ul li a{
+    text-decoration:none;
+    
+}
+
+/********************
+ main section styles 
+*********************/
+.influencers-journey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.setion-title{
+    font-size: 60px;
+}
+.pink-color{
+    color:#ff014f;
+}
+#typing{
+    position: relative;
+    color:transparent;
+   
+}
+#typing::after{
+    content: "Influencer";
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:#ff014f;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes typing {
+    0%{
+        content: "I|";
+    }
+    5%{
+        content: "In|";
+    }
+    10%{
+        content: "Inf|";
+    }
+    15%{
+        content: "Infl|";
+    }
+    20%{
+        content: "Influ|";
+    }
+    25%{
+        content: "Influe|";
+    }
+    30%{
+        content: "Influen|";
+    }
+    35%{
+        content: "Influenc|";
+    }
+    40%{
+        content: "Influence|";
+    }
+    45%{
+        content: "Influencer|";
+    }
+    
+    
+}
+.section-image{
+   position: relative;
+   margin: 60px 0px 0px 80px;
+}
+.main-camera{
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+
+
+
