@@ -180,6 +180,10 @@ Animation
     
     
 }
+/****************** 
+influencers-journey
+*******************/
+
 .section-image{
    position: relative;
    margin: 60px 0px 0px 80px;
@@ -188,6 +192,18 @@ Animation
     position: absolute;
     top:20px;
     left:30px;
+}
+
+/************************
+    Sponsor section
+*************************/
+.sponsor-logo{
+    margin: 50px 30px;
+    border-bottom: 0.5px solid gray;
+    border-top: 0.5px solid gray;
+}
+.sponsor-logo img{
+    padding: 30px 20px;
 }
 
 
@@ -310,6 +326,8 @@ footer{
 Responsive with css
 *********************/
 
+/* For mobile  */
+
 @media only screen and (max-width:688Px) {
     nav{
         flex-direction: column;
@@ -343,6 +361,9 @@ Responsive with css
 
     
 }
+
+/* For tablet */
+
 @media only screen and (min-width:688px) and (max-width:992px) {
     
     .influencers-journey{
