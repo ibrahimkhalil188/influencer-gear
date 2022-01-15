@@ -4,7 +4,6 @@
     margin:0%;
     padding:0%;
     box-sizing: border-box;
-    
 }
 
 /************ 
@@ -13,16 +12,44 @@ Common style
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    width: 80%;
     margin: 0 auto;
     font-size: 18px;
     background-color: #aaaaaa78;
 }
 
 
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff014f ;
+    width: 200px;
+    height: 45px;
+    color:white;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 25px;
+    
+}
+a{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    color: #ff014f ;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+
 /**************** 
 Header nav style 
 *****************/
+header{
+    width: 80%;
+    margin: 0 auto;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -38,15 +65,19 @@ nav{
     list-style: none;
     margin-right:16px;
 }
-.menu-var ul li a{
+.menu-var ul a{
     text-decoration:none;
+    color:black;
     
 }
 
 /********************
  main section styles 
 *********************/
-
+main{
+    width: 80%;
+    margin: 0 auto;
+}
 .influencers-journey{
     display: flex;
     justify-content: center;
@@ -164,9 +195,13 @@ Animation
 /************************
     Populer collection
 *************************/
-
-.colletion-title{
+#product-section{
+    margin:100px 40px;
+}
+.collection-title{
     text-align: center;
+    margin-bottom: 60px;
+    font-size: 34px;
 }
 .populer-collection{
     display: grid;
@@ -197,4 +232,114 @@ Animation
 .black-color{
     color:black;
     font-size: 14px;
+}
+#see-more{
+    position: absolute;
+    right:15%;
+    background-color: #aaaaaa78;
+    color:#ff014f;
+}
+ /********************
+    Influencer knowleged
+ *********************/
+ .last-section{
+     margin: 50px 10px;
+ }
+.knowledge{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+article{
+    width: 272px;
+    height: 340px;
+    padding: 10px;
+    box-shadow: 10px 10px 45px gray;
+}
+article img{
+    width: 250px;
+    margin-bottom: 10px;
+    height: 140px;
+    
+}
+article p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+.read-more{
+    background-color:#aaaaaa;
+    color:#ff014f;
+}
+
+    
+
+/*****************
+    Footer style  
+******************/
+footer{
+    background-color: #0A0826;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    padding: 50px;
+
+}
+.footer-info{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-media ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-media ul li a {
+    text-decoration: none;
+    color:white;
+    margin:10px;
+    background-color: rgba(128, 128, 128, 0.753);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+/******************* 
+Responsive with css
+*********************/
+
+@media only screen and (max-width:688Px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .menu-var ul{
+        display: block;
+       visibility: hidden;
+        
+    }
+    .influencers-journey{
+       flex-direction: column;
+    }
+    .populer-collection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        justify-content: space-evenly
+
+    }    
+
+    .knowledge{
+        flex-direction:column;
+       
+    }
+    article{
+        margin-bottom: 20px;
+    }
+
+    
 }
