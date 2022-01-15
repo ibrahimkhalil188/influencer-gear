@@ -4,6 +4,7 @@
     margin:0%;
     padding:0%;
     box-sizing: border-box;
+    
 }
 
 /************ 
@@ -14,7 +15,8 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     width: 80%;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
+    background-color: #aaaaaa78;
 }
 
 
@@ -44,6 +46,7 @@ nav{
 /********************
  main section styles 
 *********************/
+
 .influencers-journey{
     display: flex;
     justify-content: center;
@@ -73,6 +76,11 @@ nav{
     animation-iteration-count: infinite;
 
 }
+
+/* ******
+Animation
+******** */
+
 @keyframes typing {
     0%{
         content: "I|";
@@ -104,6 +112,40 @@ nav{
     45%{
         content: "Influencer|";
     }
+    50%,
+    70%{
+        content: "Influencer|";
+    }
+    70%{
+        content: "Influencer|";
+    }
+    76%{
+        content: "Influenc|";
+    }
+    79%{
+        content: "Influen|";
+    }
+    82%{
+        content: "Influe|";
+    }
+    85%{
+        content: "Influ|";
+    }
+    88%{
+        content: "Infl|";
+    }
+    91%{
+        content: "Inf|";
+    }
+    94%{
+        content: "In|";
+    }
+    97%{
+        content: "I|";
+    }
+    100%{
+        content: "|";
+    }
     
     
 }
@@ -119,3 +161,40 @@ nav{
 
 
 
+/************************
+    Populer collection
+*************************/
+
+.colletion-title{
+    text-align: center;
+}
+.populer-collection{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 30px;
+}
+.item{
+    width:300px ;
+    height: 450px;
+    padding: 15px;
+    background-color: white;
+}
+.item-image{
+    width: 270px;
+    height:225px;
+    margin-bottom: 10px;
+}
+.item-name{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.item-ratting{
+    color: goldenrod;
+    padding: 6px ;
+    font-size: 16px;
+   
+}
+.black-color{
+    color:black;
+    font-size: 14px;
+}
